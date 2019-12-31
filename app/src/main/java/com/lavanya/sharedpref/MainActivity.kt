@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        val prefs= getSharedPreferences("MyPreferences", Context.MODE_PRIVATE)
         val prefs = getPreferences(Context.MODE_PRIVATE)
 
         appOpenCount = prefs.getInt(KEY_APP_OPEN, 0)
